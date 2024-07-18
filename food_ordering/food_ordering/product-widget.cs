@@ -26,5 +26,10 @@ namespace food_ordering
         {
 
         }
+
+        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
