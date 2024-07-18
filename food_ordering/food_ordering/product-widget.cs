@@ -26,7 +26,7 @@ namespace food_ordering
 
         public string Category { get; set; }
 
-        public int count;
+        public int Count { get; set; }
         public Image PImage
         {
             get { return itemImage.Image; }
@@ -35,12 +35,12 @@ namespace food_ordering
 
         private void guna2GradientCircleButton1_Click(object sender, EventArgs e)
         {
-            count = Convert.ToInt32(lblCount.Text);
-            if (count > 1)
+            Count = Convert.ToInt32(lblCount.Text);
+            if (Count > 1)
             {
                 minus?.Invoke(this, e);
-                count--;
-                lblCount.Text = count.ToString();
+                Count--;
+                lblCount.Text = Count.ToString();
             }
         }
 
@@ -56,18 +56,20 @@ namespace food_ordering
 
         private void btnCart_Click(object sender, EventArgs e)
         {
+            Count = Convert.ToInt32(lblCount.Text);
             onSelect?.Invoke(this, e);
+          
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
 
-            count = Convert.ToInt32(lblCount.Text);
-            if (count >= 1)
+            Count = Convert.ToInt32(lblCount.Text);
+            if (Count >= 1)
             {
                 add?.Invoke(this, e);
-                count++;
-                lblCount.Text = count.ToString();
+                Count++;
+                lblCount.Text = Count.ToString();
             }
 
         }
@@ -79,6 +81,9 @@ namespace food_ordering
 
         private void product_widget_Load(object sender, EventArgs e)
         {
+            lblName.Text = Name;
+            lblPrice.Text = Price;
+
 
         }
     }

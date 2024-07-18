@@ -121,11 +121,11 @@
             // 
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(11, 166);
+            this.lblName.Location = new System.Drawing.Point(12, 171);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(168, 20);
+            this.lblName.Size = new System.Drawing.Size(57, 20);
             this.lblName.TabIndex = 9;
-            this.lblName.Text = "Chicken Cheese Burger";
+            this.lblName.Text = "Burger";
             this.lblName.Click += new System.EventHandler(this.label1_Click);
             // 
             // lblPrice
@@ -149,7 +149,7 @@
             this.btnCart.ForeColor = System.Drawing.Color.White;
             this.btnCart.HoverState.Parent = this.btnCart;
             this.btnCart.Location = new System.Drawing.Point(2, 275);
-            this.btnCart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCart.Margin = new System.Windows.Forms.Padding(4);
             this.btnCart.Name = "btnCart";
             this.btnCart.ShadowDecoration.Parent = this.btnCart;
             this.btnCart.Size = new System.Drawing.Size(184, 54);

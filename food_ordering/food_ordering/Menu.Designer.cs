@@ -44,26 +44,22 @@
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2GradientPanel4 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2GradientPanel5 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.lblTotal = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.guna2GradientButton5 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.dgvName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2GradientButton4 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.itemPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2GradientPanel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2GradientButton3 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.product_widget1 = new food_ordering.product_widget();
-            this.product_widget2 = new food_ordering.product_widget();
-            this.product_widget3 = new food_ordering.product_widget();
-            this.product_widget4 = new food_ordering.product_widget();
-            this.product_widget5 = new food_ordering.product_widget();
+            this.dgvItemtable = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.dgvName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
@@ -72,11 +68,10 @@
             this.guna2GradientPanel1.SuspendLayout();
             this.guna2GradientPanel4.SuspendLayout();
             this.guna2GradientPanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.guna2Panel2.SuspendLayout();
             this.guna2GradientPanel2.SuspendLayout();
             this.guna2GradientPanel3.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvItemtable)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -184,8 +179,8 @@
             // 
             // guna2GradientPanel4
             // 
+            this.guna2GradientPanel4.Controls.Add(this.dgvItemtable);
             this.guna2GradientPanel4.Controls.Add(this.guna2GradientPanel5);
-            this.guna2GradientPanel4.Controls.Add(this.guna2DataGridView1);
             this.guna2GradientPanel4.Controls.Add(this.guna2Panel2);
             this.guna2GradientPanel4.Dock = System.Windows.Forms.DockStyle.Right;
             this.guna2GradientPanel4.Location = new System.Drawing.Point(429, 0);
@@ -197,9 +192,10 @@
             // 
             // guna2GradientPanel5
             // 
+            this.guna2GradientPanel5.Controls.Add(this.lblTotal);
             this.guna2GradientPanel5.Controls.Add(this.label2);
             this.guna2GradientPanel5.Controls.Add(this.guna2GradientButton5);
-            this.guna2GradientPanel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2GradientPanel5.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.guna2GradientPanel5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.guna2GradientPanel5.FillColor2 = System.Drawing.Color.Green;
             this.guna2GradientPanel5.Location = new System.Drawing.Point(0, 615);
@@ -208,12 +204,22 @@
             this.guna2GradientPanel5.Size = new System.Drawing.Size(264, 129);
             this.guna2GradientPanel5.TabIndex = 3;
             // 
+            // lblTotal
+            // 
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.BackColor = System.Drawing.Color.Transparent;
+            this.lblTotal.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotal.Location = new System.Drawing.Point(86, 24);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(0, 25);
+            this.lblTotal.TabIndex = 6;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(26, 24);
+            this.label2.Location = new System.Drawing.Point(15, 24);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(55, 25);
             this.label2.TabIndex = 5;
@@ -237,89 +243,6 @@
             this.guna2GradientButton5.Size = new System.Drawing.Size(264, 54);
             this.guna2GradientButton5.TabIndex = 2;
             this.guna2GradientButton5.Text = "Proceed to Payment";
-            // 
-            // guna2DataGridView1
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.guna2DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.guna2DataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.guna2DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.guna2DataGridView1.ColumnHeadersHeight = 21;
-            this.guna2DataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dgvName,
-            this.dgvQuantity,
-            this.dgvAmount,
-            this.dgvPrice});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.guna2DataGridView1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2DataGridView1.EnableHeadersVisualStyles = false;
-            this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(0, 34);
-            this.guna2DataGridView1.Name = "guna2DataGridView1";
-            this.guna2DataGridView1.RowHeadersVisible = false;
-            this.guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(264, 581);
-            this.guna2DataGridView1.TabIndex = 1;
-            this.guna2DataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 21;
-            this.guna2DataGridView1.ThemeStyle.ReadOnly = false;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 22;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // dgvName
-            // 
-            this.dgvName.HeaderText = "Name";
-            this.dgvName.Name = "dgvName";
-            // 
-            // dgvQuantity
-            // 
-            this.dgvQuantity.HeaderText = "Quantity";
-            this.dgvQuantity.Name = "dgvQuantity";
-            // 
-            // dgvAmount
-            // 
-            this.dgvAmount.HeaderText = "Amount";
-            this.dgvAmount.Name = "dgvAmount";
-            // 
-            // dgvPrice
-            // 
-            this.dgvPrice.HeaderText = "Price";
-            this.dgvPrice.Name = "dgvPrice";
             // 
             // guna2Panel2
             // 
@@ -350,7 +273,7 @@
             // 
             // guna2GradientPanel2
             // 
-            this.guna2GradientPanel2.Controls.Add(this.flowLayoutPanel1);
+            this.guna2GradientPanel2.Controls.Add(this.itemPanel);
             this.guna2GradientPanel2.Controls.Add(this.guna2GradientPanel3);
             this.guna2GradientPanel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2GradientPanel2.FillColor = System.Drawing.Color.Red;
@@ -360,6 +283,16 @@
             this.guna2GradientPanel2.ShadowDecoration.Parent = this.guna2GradientPanel2;
             this.guna2GradientPanel2.Size = new System.Drawing.Size(430, 744);
             this.guna2GradientPanel2.TabIndex = 2;
+            // 
+            // itemPanel
+            // 
+            this.itemPanel.AutoScroll = true;
+            this.itemPanel.BackColor = System.Drawing.Color.Transparent;
+            this.itemPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.itemPanel.Location = new System.Drawing.Point(0, 34);
+            this.itemPanel.Name = "itemPanel";
+            this.itemPanel.Size = new System.Drawing.Size(430, 710);
+            this.itemPanel.TabIndex = 1;
             // 
             // guna2GradientPanel3
             // 
@@ -435,76 +368,96 @@
             this.guna2GradientButton1.TabIndex = 1;
             this.guna2GradientButton1.Text = "Beverages";
             // 
-            // flowLayoutPanel1
+            // dgvItemtable
             // 
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel1.Controls.Add(this.product_widget5);
-            this.flowLayoutPanel1.Controls.Add(this.product_widget1);
-            this.flowLayoutPanel1.Controls.Add(this.product_widget2);
-            this.flowLayoutPanel1.Controls.Add(this.product_widget3);
-            this.flowLayoutPanel1.Controls.Add(this.product_widget4);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 34);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(430, 710);
-            this.flowLayoutPanel1.TabIndex = 1;
+            this.dgvItemtable.AllowUserToAddRows = false;
+            this.dgvItemtable.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dgvItemtable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvItemtable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvItemtable.BackgroundColor = System.Drawing.Color.White;
+            this.dgvItemtable.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvItemtable.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgvItemtable.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvItemtable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvItemtable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvItemtable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvName,
+            this.dgvQuantity,
+            this.dgvPrice,
+            this.dgvAmount});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvItemtable.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvItemtable.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dgvItemtable.EnableHeadersVisualStyles = false;
+            this.dgvItemtable.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgvItemtable.Location = new System.Drawing.Point(0, 34);
+            this.dgvItemtable.Name = "dgvItemtable";
+            this.dgvItemtable.ReadOnly = true;
+            this.dgvItemtable.RowHeadersVisible = false;
+            this.dgvItemtable.RowTemplate.Height = 24;
+            this.dgvItemtable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvItemtable.Size = new System.Drawing.Size(264, 575);
+            this.dgvItemtable.TabIndex = 4;
+            this.dgvItemtable.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
+            this.dgvItemtable.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgvItemtable.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dgvItemtable.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dgvItemtable.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dgvItemtable.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dgvItemtable.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dgvItemtable.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgvItemtable.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dgvItemtable.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvItemtable.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dgvItemtable.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dgvItemtable.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvItemtable.ThemeStyle.HeaderStyle.Height = 21;
+            this.dgvItemtable.ThemeStyle.ReadOnly = true;
+            this.dgvItemtable.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgvItemtable.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgvItemtable.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dgvItemtable.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgvItemtable.ThemeStyle.RowsStyle.Height = 24;
+            this.dgvItemtable.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgvItemtable.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // product_widget1
+            // dgvName
             // 
-            this.product_widget1.AutoScroll = true;
-            this.product_widget1.BackColor = System.Drawing.Color.White;
-            this.product_widget1.Location = new System.Drawing.Point(212, 2);
-            this.product_widget1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.product_widget1.Name = "product_widget1";
-            this.product_widget1.PImage = ((System.Drawing.Image)(resources.GetObject("product_widget1.PImage")));
-            this.product_widget1.Price = null;
-            this.product_widget1.Size = new System.Drawing.Size(203, 364);
-            this.product_widget1.TabIndex = 0;
+            this.dgvName.HeaderText = "Name";
+            this.dgvName.Name = "dgvName";
+            this.dgvName.ReadOnly = true;
             // 
-            // product_widget2
+            // dgvQuantity
             // 
-            this.product_widget2.BackColor = System.Drawing.Color.White;
-            this.product_widget2.Location = new System.Drawing.Point(3, 370);
-            this.product_widget2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.product_widget2.Name = "product_widget2";
-            this.product_widget2.PImage = ((System.Drawing.Image)(resources.GetObject("product_widget2.PImage")));
-            this.product_widget2.Price = null;
-            this.product_widget2.Size = new System.Drawing.Size(203, 364);
-            this.product_widget2.TabIndex = 1;
+            this.dgvQuantity.HeaderText = "Quantity";
+            this.dgvQuantity.Name = "dgvQuantity";
+            this.dgvQuantity.ReadOnly = true;
             // 
-            // product_widget3
+            // dgvPrice
             // 
-            this.product_widget3.BackColor = System.Drawing.Color.White;
-            this.product_widget3.Location = new System.Drawing.Point(212, 370);
-            this.product_widget3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.product_widget3.Name = "product_widget3";
-            this.product_widget3.PImage = ((System.Drawing.Image)(resources.GetObject("product_widget3.PImage")));
-            this.product_widget3.Price = null;
-            this.product_widget3.Size = new System.Drawing.Size(203, 364);
-            this.product_widget3.TabIndex = 2;
+            this.dgvPrice.HeaderText = "Price";
+            this.dgvPrice.Name = "dgvPrice";
+            this.dgvPrice.ReadOnly = true;
             // 
-            // product_widget4
+            // dgvAmount
             // 
-            this.product_widget4.BackColor = System.Drawing.Color.White;
-            this.product_widget4.Location = new System.Drawing.Point(3, 738);
-            this.product_widget4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.product_widget4.Name = "product_widget4";
-            this.product_widget4.PImage = ((System.Drawing.Image)(resources.GetObject("product_widget4.PImage")));
-            this.product_widget4.Price = null;
-            this.product_widget4.Size = new System.Drawing.Size(203, 364);
-            this.product_widget4.TabIndex = 3;
-            // 
-            // product_widget5
-            // 
-            this.product_widget5.BackColor = System.Drawing.Color.White;
-            this.product_widget5.Location = new System.Drawing.Point(3, 2);
-            this.product_widget5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.product_widget5.Name = "product_widget5";
-            this.product_widget5.PImage = ((System.Drawing.Image)(resources.GetObject("product_widget5.PImage")));
-            this.product_widget5.Price = null;
-            this.product_widget5.Size = new System.Drawing.Size(203, 364);
-            this.product_widget5.TabIndex = 4;
+            this.dgvAmount.HeaderText = "Amount";
+            this.dgvAmount.Name = "dgvAmount";
+            this.dgvAmount.ReadOnly = true;
             // 
             // Menu
             // 
@@ -527,11 +480,10 @@
             this.guna2GradientPanel4.ResumeLayout(false);
             this.guna2GradientPanel5.ResumeLayout(false);
             this.guna2GradientPanel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
             this.guna2GradientPanel2.ResumeLayout(false);
             this.guna2GradientPanel3.ResumeLayout(false);
-            this.flowLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvItemtable)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -554,20 +506,16 @@
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel4;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton4;
-        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvQuantity;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvAmount;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvPrice;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel5;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private product_widget product_widget5;
-        private product_widget product_widget1;
-        private product_widget product_widget2;
-        private product_widget product_widget3;
-        private product_widget product_widget4;
+        private System.Windows.Forms.FlowLayoutPanel itemPanel;
+        private System.Windows.Forms.Label lblTotal;
+        private Guna.UI2.WinForms.Guna2DataGridView dgvItemtable;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvQuantity;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvPrice;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvAmount;
     }
 }

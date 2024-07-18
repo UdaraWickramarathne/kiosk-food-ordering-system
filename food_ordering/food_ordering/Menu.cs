@@ -1,8 +1,11 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,6 +19,13 @@ namespace food_ordering
         {
             InitializeComponent();
         }
+        MySqlConnection conn;
+        public void maincon()
+        {
+            string sql_conn = "server=localhost;user=root;database=munchbar_db;port=3306";
+            conn = new MySqlConnection(sql_conn);
+            conn.Open();
+        }
 
         private void guna2Panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -24,7 +34,7 @@ namespace food_ordering
 
         private void Menu_Load(object sender, EventArgs e)
         {
-
+            LoadItems();
         }
 
         private void guna2GradientPanel4_Paint(object sender, PaintEventArgs e)
@@ -36,5 +46,68 @@ namespace food_ordering
         {
 
         }
+        public void LoadItems()
+        {
+            maincon();
+            string qry = "SELECT itemname,unitprice,category,image FROM item";
+            MySqlCommand cmd = new MySqlCommand(qry, conn);
+            MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+
+            foreach (DataRow item in dt.Rows)
+            {
+                Byte[] imagearry = (byte[])item["image"];
+
+                AddItems(item["itemname"].ToString(), item["unitprice"].ToString(), item["category"].ToString(), Image.FromStream(new MemoryStream(imagearry)));
+            }
+            conn.Close();
+        }
+        private void AddItems(string name, string price, string category, Image image)
+        {
+            var w = new product_widget()
+            {
+
+                Name = name,
+                Price = price,
+                Category = category,
+                PImage = image
+
+
+            };
+            itemPanel.Controls.Add(w);
+            w.onSelect += (ss, ee) =>
+            {
+                var itemwdg = (product_widget)ss;
+
+                foreach (DataGridViewRow item in dgvItemtable.Rows)
+                {
+                    if (item.Cells["dgvName"].Value.ToString() == itemwdg.Name)
+                    {
+                        item.Cells["dgvQuantity"].Value = int.Parse(item.Cells["dgvQuantity"].Value.ToString()) + itemwdg.Count;
+                        item.Cells["dgvAmount"].Value = int.Parse(item.Cells["dgvQuantity"].Value.ToString()) * decimal.Parse(item.Cells["dgvPrice"].Value.ToString());
+                        GetTotal();
+                        return;
+                    }
+
+                }
+                dgvItemtable.Rows.Add(new object[] { itemwdg.Name, itemwdg.Count, itemwdg.Price, itemwdg.Price });
+                GetTotal();
+            };
+        }
+
+        private void GetTotal()
+        {
+            decimal total = 0;
+            lblTotal.Text = "";
+            foreach (DataGridViewRow item in dgvItemtable.Rows)
+            {
+                total += decimal.Parse(item.Cells["dgvAmount"].Value.ToString());
+            }
+
+            lblTotal.Text = total.ToString();
+        }
+
+     
     }
 }
