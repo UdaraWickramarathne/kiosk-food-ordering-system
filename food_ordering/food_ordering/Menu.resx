@@ -121,6 +121,28 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="guna2GradientButton5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAPRJREFUSEvt
+        lOENgjAQhRmBERiBERjBERjBDXQD3MBV3EA2gA10A3zv+hCKxJakP4zhSy5w9+6VtkCznd9nGIYK0SFi
+        YW8lexg092bbRid7GBk2I/u/gZWNL7RRKc0WIc8RjSlCUrIHXFx5QtLaA9hbKFoW1pDdoZqHpLnGwbzv
+        GzlXvvoZq8WhmockahzgrJQ5Z35ClMprxJLemkdU9JBELdct74+IB3VgPxOuXMUcTsj/k139g0Iy9RJx
+        t+rETXIYGZZwQG7F1TKfJ+I9gSDOEw0Ht/2PxvmiiT8pR2DirGKoZdkGjDwivh3L1A5q30lJlr0A2N1I
+        QbDBoVoAAAAASUVORK5CYII=
+</value>
+  </data>
+  <metadata name="dgvName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="dgvQuantity.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="dgvAmount.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="dgvPrice.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="guna2PictureBox4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAP5JREFUSEvt
@@ -156,7 +178,7 @@
   <data name="guna2PictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAB9AAAAKfCAYAAAA2DlNnAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DgAACw4BQL7hQQAA/7JJREFUeF7s/U2MXOW99/1uKVIGGewJe5ZIR/cmih4CqbduY1PmlvIAOjpBWEc5
+        DQAACw0B7QfALAAA/7JJREFUeF7s/U2MXOW99/1uKVIGGewJe5ZIR/cmih4CqbduY1PmlvIAOjpBWEc5
         OnfMUXQfRQFtTOB58jgBCUjANh1M4t3epm/gAbvTQA7niAGDKApSpGTGS4ZhcpM9sJJJEEkmVhKC03ZX
         dZ31v9yrvXr1t1b962VVrZff4COShan1Ui/dru+6ruuf7nnwuIiI5Giw/uinBsfbnx58Z+kzg0eX/zlY
         bd2w47N7vNi8cSrpx7u+nxt2923HER0THauIiIiIiIiIiIiIiEid4UYREWEhhl8L3cuD840j2+daR7fP
@@ -2331,7 +2353,7 @@
   <data name="guna2PictureBox1.InitialImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAB9AAAAKfCAYAAAA2DlNnAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DgAACw4BQL7hQQAA/7JJREFUeF7s/X2oXNXZP/5fbbkNpYiFUlIMmb3mqIiWm2IFLS2ttAgV+QUECbRU
+        DQAACw0B7QfALAAA/7JJREFUeF7s/X2oXNXZP/5fbbkNpYiFUlIMmb3mqIiWm2IFLS2ttAgV+QUECbRU
         RAsBv4LUj1a0hFYrCqHSiFakilIriigSLAHRWwnFoqgoFkWLVRQlqNE5eTw5Mydqzu99TSZ6Mud9HmZm
         7Zm19n7/8WLiNtlrrWuv/bie7P/3//0/EREp0cyJ9vX9DftOJ9ipM8HObjftXPx5w1ywje1gl8Im/Pe1
         naZdhz9vWQjb78T2u5aCfd3W929u6u6rsN/gz5vw/3/VTaewn8NP5xp2xsGGTR0s7Fvza+1rLL8iIiIi
@@ -4056,6 +4078,17 @@
         5fe7svw9v8jrp8vf/93h/eR95f29XNvg15cKtFoHAAAAAAAYbc0gwHpa2hIP1qL7/FTMLLeO39lNxy9r
         cTo//0NXd3BPx2xfYn9+fisdvMHb/SAO3Ur99+/899cL3/tr8Tt/3lN///Dv5N8bFvxrK/X8HvX7LEVs
         an1fAAAAAAAAxtF/iP8PQhQ4/7iTMWIAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="guna2GradientButton4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAATJJREFUSEvV
+        lWGRwjAQhSsBCUhAAhKQgAQkIAEHdxLOATgAB5yDw8Hee92XTtskZMsv+GYy0+x+m01DgO4tMbO1HuOg
+        6IZB/jD2Chdxzb40jYGC1ICwyUqpDFd6ljUhKPrxWjsqNG8+5yCtB3O6V01zkNyyCtwVajXYSaN38JD9
+        KlSGgnvlz0I5MuTxvMLg0ZKtwmUg7N2zs0ITlJs0x/zoYbsoVAcSd/PodbONwgOITa4p573pZH4RiGlH
+        3wpVoeNq2x2APN7VsyubLgXfeNkXEAVpZxGGax0GRek2tTipJA6K0mfw/E6/Chf29Rt3+lWwcPR4xtR/
+        IuZA3mAsbXJT+RuA3ewwrhh3PiucEfUyII+Pp3q2yIW8DMjjwurZIhfyMiDz1fk/wAVaR9T0PpWu+wfs
+        QYpk4ioiIQAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="guna2GradientButton3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
