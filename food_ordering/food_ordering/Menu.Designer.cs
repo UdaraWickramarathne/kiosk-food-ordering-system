@@ -39,9 +39,13 @@
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2GradientPanel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2GradientButton3 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2GradientPanel4 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2GradientButton4 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
@@ -49,6 +53,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2GradientPanel1.SuspendLayout();
             this.guna2GradientPanel2.SuspendLayout();
+            this.guna2GradientPanel3.SuspendLayout();
+            this.guna2GradientPanel4.SuspendLayout();
+            this.guna2Panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -131,26 +138,88 @@
             // 
             // guna2GradientPanel1
             // 
+            this.guna2GradientPanel1.Controls.Add(this.guna2GradientPanel4);
             this.guna2GradientPanel1.Controls.Add(this.guna2GradientPanel2);
-            this.guna2GradientPanel1.Location = new System.Drawing.Point(0, 95);
+            this.guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2GradientPanel1.Location = new System.Drawing.Point(0, 94);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.ShadowDecoration.Parent = this.guna2GradientPanel1;
-            this.guna2GradientPanel1.Size = new System.Drawing.Size(387, 732);
+            this.guna2GradientPanel1.Size = new System.Drawing.Size(625, 744);
             this.guna2GradientPanel1.TabIndex = 1;
             // 
             // guna2GradientPanel2
             // 
-            this.guna2GradientPanel2.Controls.Add(this.guna2GradientButton3);
-            this.guna2GradientPanel2.Controls.Add(this.guna2GradientButton2);
-            this.guna2GradientPanel2.Controls.Add(this.guna2GradientButton1);
-            this.guna2GradientPanel2.Location = new System.Drawing.Point(0, 2);
+            this.guna2GradientPanel2.Controls.Add(this.guna2GradientPanel3);
+            this.guna2GradientPanel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2GradientPanel2.FillColor = System.Drawing.Color.Red;
+            this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.Black;
+            this.guna2GradientPanel2.Location = new System.Drawing.Point(0, 0);
             this.guna2GradientPanel2.Name = "guna2GradientPanel2";
             this.guna2GradientPanel2.ShadowDecoration.Parent = this.guna2GradientPanel2;
-            this.guna2GradientPanel2.Size = new System.Drawing.Size(386, 34);
-            this.guna2GradientPanel2.TabIndex = 0;
+            this.guna2GradientPanel2.Size = new System.Drawing.Size(430, 744);
+            this.guna2GradientPanel2.TabIndex = 2;
+            // 
+            // guna2GradientPanel3
+            // 
+            this.guna2GradientPanel3.Controls.Add(this.guna2GradientButton3);
+            this.guna2GradientPanel3.Controls.Add(this.guna2GradientButton2);
+            this.guna2GradientPanel3.Controls.Add(this.guna2GradientButton1);
+            this.guna2GradientPanel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2GradientPanel3.FillColor = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel3.FillColor2 = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel3.Location = new System.Drawing.Point(0, 0);
+            this.guna2GradientPanel3.Name = "guna2GradientPanel3";
+            this.guna2GradientPanel3.ShadowDecoration.Parent = this.guna2GradientPanel3;
+            this.guna2GradientPanel3.Size = new System.Drawing.Size(430, 34);
+            this.guna2GradientPanel3.TabIndex = 0;
+            // 
+            // guna2GradientButton3
+            // 
+            this.guna2GradientButton3.Animated = true;
+            this.guna2GradientButton3.BorderColor = System.Drawing.Color.White;
+            this.guna2GradientButton3.BorderThickness = 2;
+            this.guna2GradientButton3.CheckedState.Parent = this.guna2GradientButton3;
+            this.guna2GradientButton3.CustomImages.Parent = this.guna2GradientButton3;
+            this.guna2GradientButton3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2GradientButton3.FillColor = System.Drawing.Color.Red;
+            this.guna2GradientButton3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.guna2GradientButton3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GradientButton3.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientButton3.HoverState.Parent = this.guna2GradientButton3;
+            this.guna2GradientButton3.Image = ((System.Drawing.Image)(resources.GetObject("guna2GradientButton3.Image")));
+            this.guna2GradientButton3.Location = new System.Drawing.Point(287, 0);
+            this.guna2GradientButton3.Name = "guna2GradientButton3";
+            this.guna2GradientButton3.ShadowDecoration.Parent = this.guna2GradientButton3;
+            this.guna2GradientButton3.Size = new System.Drawing.Size(143, 34);
+            this.guna2GradientButton3.TabIndex = 2;
+            this.guna2GradientButton3.Text = "Desserts";
+            // 
+            // guna2GradientButton2
+            // 
+            this.guna2GradientButton2.Animated = true;
+            this.guna2GradientButton2.BorderColor = System.Drawing.Color.White;
+            this.guna2GradientButton2.BorderThickness = 2;
+            this.guna2GradientButton2.CheckedState.Parent = this.guna2GradientButton2;
+            this.guna2GradientButton2.CustomImages.Parent = this.guna2GradientButton2;
+            this.guna2GradientButton2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2GradientButton2.FillColor = System.Drawing.Color.Red;
+            this.guna2GradientButton2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.guna2GradientButton2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GradientButton2.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientButton2.HoverState.Parent = this.guna2GradientButton2;
+            this.guna2GradientButton2.Image = ((System.Drawing.Image)(resources.GetObject("guna2GradientButton2.Image")));
+            this.guna2GradientButton2.Location = new System.Drawing.Point(147, 0);
+            this.guna2GradientButton2.Name = "guna2GradientButton2";
+            this.guna2GradientButton2.ShadowDecoration.Parent = this.guna2GradientButton2;
+            this.guna2GradientButton2.Size = new System.Drawing.Size(140, 34);
+            this.guna2GradientButton2.TabIndex = 2;
+            this.guna2GradientButton2.Text = "Snacks";
             // 
             // guna2GradientButton1
             // 
+            this.guna2GradientButton1.Animated = true;
+            this.guna2GradientButton1.BorderColor = System.Drawing.Color.White;
+            this.guna2GradientButton1.BorderThickness = 2;
             this.guna2GradientButton1.CheckedState.Parent = this.guna2GradientButton1;
             this.guna2GradientButton1.CustomImages.Parent = this.guna2GradientButton1;
             this.guna2GradientButton1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -163,45 +232,46 @@
             this.guna2GradientButton1.Location = new System.Drawing.Point(0, 0);
             this.guna2GradientButton1.Name = "guna2GradientButton1";
             this.guna2GradientButton1.ShadowDecoration.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Size = new System.Drawing.Size(131, 34);
+            this.guna2GradientButton1.Size = new System.Drawing.Size(147, 34);
             this.guna2GradientButton1.TabIndex = 1;
             this.guna2GradientButton1.Text = "Beverages";
             // 
-            // guna2GradientButton2
+            // guna2GradientPanel4
             // 
-            this.guna2GradientButton2.CheckedState.Parent = this.guna2GradientButton2;
-            this.guna2GradientButton2.CustomImages.Parent = this.guna2GradientButton2;
-            this.guna2GradientButton2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2GradientButton2.FillColor = System.Drawing.Color.Red;
-            this.guna2GradientButton2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.guna2GradientButton2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientButton2.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton2.HoverState.Parent = this.guna2GradientButton2;
-            this.guna2GradientButton2.Image = ((System.Drawing.Image)(resources.GetObject("guna2GradientButton2.Image")));
-            this.guna2GradientButton2.Location = new System.Drawing.Point(131, 0);
-            this.guna2GradientButton2.Name = "guna2GradientButton2";
-            this.guna2GradientButton2.ShadowDecoration.Parent = this.guna2GradientButton2;
-            this.guna2GradientButton2.Size = new System.Drawing.Size(122, 34);
-            this.guna2GradientButton2.TabIndex = 2;
-            this.guna2GradientButton2.Text = "Snacks";
+            this.guna2GradientPanel4.Controls.Add(this.guna2Panel2);
+            this.guna2GradientPanel4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2GradientPanel4.Location = new System.Drawing.Point(429, 0);
+            this.guna2GradientPanel4.Name = "guna2GradientPanel4";
+            this.guna2GradientPanel4.ShadowDecoration.Parent = this.guna2GradientPanel4;
+            this.guna2GradientPanel4.Size = new System.Drawing.Size(196, 744);
+            this.guna2GradientPanel4.TabIndex = 3;
+            this.guna2GradientPanel4.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2GradientPanel4_Paint);
             // 
-            // guna2GradientButton3
+            // guna2Panel2
             // 
-            this.guna2GradientButton3.CheckedState.Parent = this.guna2GradientButton3;
-            this.guna2GradientButton3.CustomImages.Parent = this.guna2GradientButton3;
-            this.guna2GradientButton3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2GradientButton3.FillColor = System.Drawing.Color.Red;
-            this.guna2GradientButton3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.guna2GradientButton3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientButton3.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton3.HoverState.Parent = this.guna2GradientButton3;
-            this.guna2GradientButton3.Image = ((System.Drawing.Image)(resources.GetObject("guna2GradientButton3.Image")));
-            this.guna2GradientButton3.Location = new System.Drawing.Point(253, 0);
-            this.guna2GradientButton3.Name = "guna2GradientButton3";
-            this.guna2GradientButton3.ShadowDecoration.Parent = this.guna2GradientButton3;
-            this.guna2GradientButton3.Size = new System.Drawing.Size(131, 34);
-            this.guna2GradientButton3.TabIndex = 2;
-            this.guna2GradientButton3.Text = "Beverages";
+            this.guna2Panel2.Controls.Add(this.guna2GradientButton4);
+            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
+            this.guna2Panel2.Size = new System.Drawing.Size(196, 34);
+            this.guna2Panel2.TabIndex = 0;
+            // 
+            // guna2GradientButton4
+            // 
+            this.guna2GradientButton4.CheckedState.Parent = this.guna2GradientButton4;
+            this.guna2GradientButton4.CustomImages.Parent = this.guna2GradientButton4;
+            this.guna2GradientButton4.FillColor = System.Drawing.Color.Lime;
+            this.guna2GradientButton4.FillColor2 = System.Drawing.Color.Green;
+            this.guna2GradientButton4.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2GradientButton4.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientButton4.HoverState.Parent = this.guna2GradientButton4;
+            this.guna2GradientButton4.Location = new System.Drawing.Point(0, 0);
+            this.guna2GradientButton4.Name = "guna2GradientButton4";
+            this.guna2GradientButton4.ShadowDecoration.Parent = this.guna2GradientButton4;
+            this.guna2GradientButton4.Size = new System.Drawing.Size(196, 34);
+            this.guna2GradientButton4.TabIndex = 0;
+            this.guna2GradientButton4.Text = "Checkout";
             // 
             // Menu
             // 
@@ -222,6 +292,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel2.ResumeLayout(false);
+            this.guna2GradientPanel3.ResumeLayout(false);
+            this.guna2GradientPanel4.ResumeLayout(false);
+            this.guna2Panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -237,8 +310,12 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel3;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton3;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton2;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel4;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
+        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton4;
     }
 }

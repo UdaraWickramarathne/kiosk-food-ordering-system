@@ -142,12 +142,13 @@
             this.roundedPanel1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.roundedPanel1.Location = new System.Drawing.Point(62, 122);
             this.roundedPanel1.Name = "roundedPanel1";
-            this.roundedPanel1.Size = new System.Drawing.Size(344, 512);
+            this.roundedPanel1.Size = new System.Drawing.Size(345, 514);
             this.roundedPanel1.TabIndex = 2;
             this.roundedPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.roundedPanel1_Paint);
             // 
             // lblError
             // 
+<<<<<<< HEAD
             this.lblError.BackColor = System.Drawing.Color.Transparent;
             this.lblError.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblError.ForeColor = System.Drawing.Color.Red;
@@ -156,6 +157,14 @@
             this.lblError.Size = new System.Drawing.Size(3, 2);
             this.lblError.TabIndex = 13;
             this.lblError.Text = null;
+=======
+            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(109, 356);
+            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(128, 23);
+            this.guna2HtmlLabel3.TabIndex = 13;
+            this.guna2HtmlLabel3.Text = "ERROR MESSAGE";
+>>>>>>> d2d5134cff63e4a5ad8f2ce87274a85bfa54f341
             // 
             // guna2HtmlLabel1
             // 
