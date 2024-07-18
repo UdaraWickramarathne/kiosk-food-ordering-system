@@ -1,0 +1,14 @@
+C:\Users\wwasi\Desktop\C# Project\food_ordering\food_ordering\bin\Debug\food_ordering.exe.config
+C:\Users\wwasi\Desktop\C# Project\food_ordering\food_ordering\bin\Debug\food_ordering.exe
+C:\Users\wwasi\Desktop\C# Project\food_ordering\food_ordering\bin\Debug\food_ordering.pdb
+C:\Users\wwasi\Desktop\C# Project\food_ordering\food_ordering\bin\Debug\Guna.UI2.dll
+C:\Users\wwasi\Desktop\C# Project\food_ordering\food_ordering\obj\Debug\food_ordering.csproj.AssemblyReference.cache
+C:\Users\wwasi\Desktop\C# Project\food_ordering\food_ordering\obj\Debug\food_ordering.Form1.resources
+C:\Users\wwasi\Desktop\C# Project\food_ordering\food_ordering\obj\Debug\food_ordering.Properties.Resources.resources
+C:\Users\wwasi\Desktop\C# Project\food_ordering\food_ordering\obj\Debug\food_ordering.csproj.GenerateResource.cache
+C:\Users\wwasi\Desktop\C# Project\food_ordering\food_ordering\obj\Debug\food_ordering.csproj.CoreCompileInputs.cache
+C:\Users\wwasi\Desktop\C# Project\food_ordering\food_ordering\obj\Debug\food_ord.1D122481.Up2Date
+C:\Users\wwasi\Desktop\C# Project\food_ordering\food_ordering\obj\Debug\food_ordering.exe
+C:\Users\wwasi\Desktop\C# Project\food_ordering\food_ordering\obj\Debug\food_ordering.pdb
+C:\Users\wwasi\Desktop\C# Project\food_ordering\food_ordering\obj\Debug\food_ordering.Menu.resources
+C:\Users\wwasi\Desktop\C# Project\food_ordering\food_ordering\obj\Debug\food_ordering.Beverages.resources
