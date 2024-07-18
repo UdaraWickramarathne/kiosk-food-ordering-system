@@ -58,6 +58,12 @@
             this.guna2GradientButton3 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.product_widget1 = new food_ordering.product_widget();
+            this.product_widget2 = new food_ordering.product_widget();
+            this.product_widget3 = new food_ordering.product_widget();
+            this.product_widget4 = new food_ordering.product_widget();
+            this.product_widget5 = new food_ordering.product_widget();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
@@ -70,6 +76,7 @@
             this.guna2Panel2.SuspendLayout();
             this.guna2GradientPanel2.SuspendLayout();
             this.guna2GradientPanel3.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -343,6 +350,7 @@
             // 
             // guna2GradientPanel2
             // 
+            this.guna2GradientPanel2.Controls.Add(this.flowLayoutPanel1);
             this.guna2GradientPanel2.Controls.Add(this.guna2GradientPanel3);
             this.guna2GradientPanel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2GradientPanel2.FillColor = System.Drawing.Color.Red;
@@ -427,6 +435,77 @@
             this.guna2GradientButton1.TabIndex = 1;
             this.guna2GradientButton1.Text = "Beverages";
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel1.Controls.Add(this.product_widget5);
+            this.flowLayoutPanel1.Controls.Add(this.product_widget1);
+            this.flowLayoutPanel1.Controls.Add(this.product_widget2);
+            this.flowLayoutPanel1.Controls.Add(this.product_widget3);
+            this.flowLayoutPanel1.Controls.Add(this.product_widget4);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 34);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(430, 710);
+            this.flowLayoutPanel1.TabIndex = 1;
+            // 
+            // product_widget1
+            // 
+            this.product_widget1.AutoScroll = true;
+            this.product_widget1.BackColor = System.Drawing.Color.White;
+            this.product_widget1.Location = new System.Drawing.Point(212, 2);
+            this.product_widget1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.product_widget1.Name = "product_widget1";
+            this.product_widget1.PImage = ((System.Drawing.Image)(resources.GetObject("product_widget1.PImage")));
+            this.product_widget1.Price = null;
+            this.product_widget1.Size = new System.Drawing.Size(203, 364);
+            this.product_widget1.TabIndex = 0;
+            // 
+            // product_widget2
+            // 
+            this.product_widget2.BackColor = System.Drawing.Color.White;
+            this.product_widget2.Location = new System.Drawing.Point(3, 370);
+            this.product_widget2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.product_widget2.Name = "product_widget2";
+            this.product_widget2.PImage = ((System.Drawing.Image)(resources.GetObject("product_widget2.PImage")));
+            this.product_widget2.Price = null;
+            this.product_widget2.Size = new System.Drawing.Size(203, 364);
+            this.product_widget2.TabIndex = 1;
+            // 
+            // product_widget3
+            // 
+            this.product_widget3.BackColor = System.Drawing.Color.White;
+            this.product_widget3.Location = new System.Drawing.Point(212, 370);
+            this.product_widget3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.product_widget3.Name = "product_widget3";
+            this.product_widget3.PImage = ((System.Drawing.Image)(resources.GetObject("product_widget3.PImage")));
+            this.product_widget3.Price = null;
+            this.product_widget3.Size = new System.Drawing.Size(203, 364);
+            this.product_widget3.TabIndex = 2;
+            // 
+            // product_widget4
+            // 
+            this.product_widget4.BackColor = System.Drawing.Color.White;
+            this.product_widget4.Location = new System.Drawing.Point(3, 738);
+            this.product_widget4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.product_widget4.Name = "product_widget4";
+            this.product_widget4.PImage = ((System.Drawing.Image)(resources.GetObject("product_widget4.PImage")));
+            this.product_widget4.Price = null;
+            this.product_widget4.Size = new System.Drawing.Size(203, 364);
+            this.product_widget4.TabIndex = 3;
+            // 
+            // product_widget5
+            // 
+            this.product_widget5.BackColor = System.Drawing.Color.White;
+            this.product_widget5.Location = new System.Drawing.Point(3, 2);
+            this.product_widget5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.product_widget5.Name = "product_widget5";
+            this.product_widget5.PImage = ((System.Drawing.Image)(resources.GetObject("product_widget5.PImage")));
+            this.product_widget5.Price = null;
+            this.product_widget5.Size = new System.Drawing.Size(203, 364);
+            this.product_widget5.TabIndex = 4;
+            // 
             // Menu
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -452,6 +531,7 @@
             this.guna2Panel2.ResumeLayout(false);
             this.guna2GradientPanel2.ResumeLayout(false);
             this.guna2GradientPanel3.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -483,5 +563,11 @@
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel5;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private product_widget product_widget5;
+        private product_widget product_widget1;
+        private product_widget product_widget2;
+        private product_widget product_widget3;
+        private product_widget product_widget4;
     }
 }

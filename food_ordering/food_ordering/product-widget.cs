@@ -17,9 +17,31 @@ namespace food_ordering
             InitializeComponent();
         }
 
+        public event EventHandler onSelect = null;
+        public event EventHandler minus = null;
+        public event EventHandler add = null;
+        public string Price { get; set; }
+
+        public string Name { get; set; }
+
+        public string Category { get; set; }
+
+        public int count;
+        public Image PImage
+        {
+            get { return itemImage.Image; }
+            set { itemImage.Image = value; }
+        }
+
         private void guna2GradientCircleButton1_Click(object sender, EventArgs e)
         {
-
+            count = Convert.ToInt32(lblCount.Text);
+            if (count > 1)
+            {
+                minus?.Invoke(this, e);
+                count--;
+                lblCount.Text = count.ToString();
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -28,6 +50,34 @@ namespace food_ordering
         }
 
         private void guna2HtmlLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCart_Click(object sender, EventArgs e)
+        {
+            onSelect?.Invoke(this, e);
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+
+            count = Convert.ToInt32(lblCount.Text);
+            if (count >= 1)
+            {
+                add?.Invoke(this, e);
+                count++;
+                lblCount.Text = count.ToString();
+            }
+
+        }
+
+        private void product_widget_LocationChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void product_widget_Load(object sender, EventArgs e)
         {
 
         }
