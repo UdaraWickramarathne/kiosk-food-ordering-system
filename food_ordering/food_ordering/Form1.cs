@@ -51,15 +51,21 @@ namespace food_ordering
               
             if(uname.Length == 0 || pass.Length == 0)
             {
-                MessageBox.Show("Please fill all fields", "Invalid login", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+                lblError.Text = "Please fill all the fields";
+                lblError.Visible = true;
                 return;
             }
-            else if(uname == "admin" && pass == "admin")
+            else if(uname == "nsbm" && pass == "admin")
             {
                 this.Close();
                 Thread th = new Thread(openMenu);
                 th.SetApartmentState(ApartmentState.STA);
                 th.Start();
+            }
+            else
+            {
+                lblError.Text = "Invalid Branch Id or Password";
+                lblError.Visible = true;
             }
 
         }
@@ -72,6 +78,11 @@ namespace food_ordering
         private void guna2PictureBox4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            lblError.Visible = false;
         }
     }
 }

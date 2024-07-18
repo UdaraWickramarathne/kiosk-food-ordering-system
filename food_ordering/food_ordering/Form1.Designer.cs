@@ -36,7 +36,7 @@
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2GradientCircleButton1 = new Guna.UI2.WinForms.Guna2GradientCircleButton();
             this.roundedPanel1 = new RoundedPanel();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblError = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.tglShowPassword = new Guna.UI2.WinForms.Guna2ToggleSwitch();
             this.txtUname = new Guna.UI2.WinForms.Guna2TextBox();
@@ -131,7 +131,7 @@
             // 
             this.roundedPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(255)))));
             this.roundedPanel1.BorderRadius = 50;
-            this.roundedPanel1.Controls.Add(this.guna2HtmlLabel3);
+            this.roundedPanel1.Controls.Add(this.lblError);
             this.roundedPanel1.Controls.Add(this.guna2HtmlLabel1);
             this.roundedPanel1.Controls.Add(this.tglShowPassword);
             this.roundedPanel1.Controls.Add(this.txtUname);
@@ -146,23 +146,27 @@
             this.roundedPanel1.TabIndex = 2;
             this.roundedPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.roundedPanel1_Paint);
             // 
-            // guna2HtmlLabel3
-            // 
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(109, 356);
-            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(128, 23);
-            this.guna2HtmlLabel3.TabIndex = 13;
-            this.guna2HtmlLabel3.Text = "ERROR MESSAGE";
+            // lblError
+
+            this.lblError.BackColor = System.Drawing.Color.Transparent;
+            this.lblError.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblError.ForeColor = System.Drawing.Color.Red;
+            this.lblError.Location = new System.Drawing.Point(64, 386);
+            this.lblError.Name = "lblError";
+            this.lblError.Size = new System.Drawing.Size(3, 2);
+            this.lblError.TabIndex = 13;
+            this.lblError.Text = null;
+
+
             // 
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.Black;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(140, 333);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(181, 333);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(89, 17);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(112, 22);
             this.guna2HtmlLabel1.TabIndex = 12;
             this.guna2HtmlLabel1.Text = "Show Password";
             // 
@@ -173,7 +177,7 @@
             this.tglShowPassword.CheckedState.InnerBorderColor = System.Drawing.Color.White;
             this.tglShowPassword.CheckedState.InnerColor = System.Drawing.Color.White;
             this.tglShowPassword.CheckedState.Parent = this.tglShowPassword;
-            this.tglShowPassword.Location = new System.Drawing.Point(109, 333);
+            this.tglShowPassword.Location = new System.Drawing.Point(150, 336);
             this.tglShowPassword.Name = "tglShowPassword";
             this.tglShowPassword.ShadowDecoration.Parent = this.tglShowPassword;
             this.tglShowPassword.Size = new System.Drawing.Size(25, 17);
@@ -255,7 +259,7 @@
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.Location = new System.Drawing.Point(109, 51);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(132, 39);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(162, 48);
             this.guna2HtmlLabel2.TabIndex = 8;
             this.guna2HtmlLabel2.Text = "Welcome!";
             // 
@@ -270,7 +274,7 @@
             this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
             this.btnLogin.HoverState.Parent = this.btnLogin;
-            this.btnLogin.Location = new System.Drawing.Point(89, 403);
+            this.btnLogin.Location = new System.Drawing.Point(87, 432);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.ShadowDecoration.Parent = this.btnLogin;
             this.btnLogin.Size = new System.Drawing.Size(165, 38);
@@ -308,6 +312,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login - MunchBar";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.roundedPanel1.ResumeLayout(false);
             this.roundedPanel1.PerformLayout();
@@ -329,7 +334,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2ToggleSwitch tglShowPassword;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblError;
         private Guna.UI2.WinForms.Guna2GradientCircleButton guna2GradientCircleButton1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
     }
