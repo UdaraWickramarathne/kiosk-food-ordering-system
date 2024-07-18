@@ -25,3 +25,4 @@ D:\Asin Project\kiosk-food-ordering-system\food_ordering\food_ordering\obj\Debug
 D:\Asin Project\kiosk-food-ordering-system\food_ordering\food_ordering\obj\Debug\food_ordering.csproj.CopyComplete
 D:\Asin Project\kiosk-food-ordering-system\food_ordering\food_ordering\obj\Debug\food_ordering.exe
 D:\Asin Project\kiosk-food-ordering-system\food_ordering\food_ordering\obj\Debug\food_ordering.pdb
+C:\Users\wwasi\Desktop\C# Project\food_ordering\food_ordering\obj\Debug\food_ordering.product_widget.resources
