@@ -33,7 +33,6 @@
             this.btnAdd = new Guna.UI2.WinForms.Guna2GradientCircleButton();
             this.btnMinus = new Guna.UI2.WinForms.Guna2GradientCircleButton();
             this.lblCount = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblName = new System.Windows.Forms.Label();
             this.lblPrice = new System.Windows.Forms.Label();
             this.btnCart = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -43,7 +42,7 @@
             // itemImage
             // 
             this.itemImage.Image = ((System.Drawing.Image)(resources.GetObject("itemImage.Image")));
-            this.itemImage.Location = new System.Drawing.Point(10, 5);
+            this.itemImage.Location = new System.Drawing.Point(7, 2);
             this.itemImage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.itemImage.Name = "itemImage";
             this.itemImage.ShadowDecoration.Parent = this.itemImage;
@@ -62,14 +61,15 @@
             this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.White;
             this.btnAdd.HoverState.Parent = this.btnAdd;
-            this.btnAdd.Location = new System.Drawing.Point(143, 196);
+            this.btnAdd.Location = new System.Drawing.Point(104, 198);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btnAdd.ShadowDecoration.Parent = this.btnAdd;
-            this.btnAdd.Size = new System.Drawing.Size(40, 37);
+            this.btnAdd.Size = new System.Drawing.Size(31, 28);
             this.btnAdd.TabIndex = 6;
             this.btnAdd.Text = "+";
+            this.btnAdd.TextOffset = new System.Drawing.Point(-1, -2);
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnMinus
@@ -84,44 +84,34 @@
             this.btnMinus.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMinus.ForeColor = System.Drawing.Color.White;
             this.btnMinus.HoverState.Parent = this.btnMinus;
-            this.btnMinus.Location = new System.Drawing.Point(58, 196);
+            this.btnMinus.Location = new System.Drawing.Point(47, 198);
             this.btnMinus.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMinus.Name = "btnMinus";
             this.btnMinus.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btnMinus.ShadowDecoration.Parent = this.btnMinus;
-            this.btnMinus.Size = new System.Drawing.Size(40, 37);
+            this.btnMinus.Size = new System.Drawing.Size(31, 28);
             this.btnMinus.TabIndex = 5;
             this.btnMinus.Text = "-";
+            this.btnMinus.TextOffset = new System.Drawing.Point(0, -2);
             this.btnMinus.Click += new System.EventHandler(this.guna2GradientCircleButton1_Click);
             // 
             // lblCount
             // 
             this.lblCount.BackColor = System.Drawing.Color.Transparent;
-            this.lblCount.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCount.Location = new System.Drawing.Point(113, 199);
+            this.lblCount.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCount.Location = new System.Drawing.Point(85, 200);
             this.lblCount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblCount.Name = "lblCount";
-            this.lblCount.Size = new System.Drawing.Size(14, 27);
+            this.lblCount.Size = new System.Drawing.Size(12, 23);
             this.lblCount.TabIndex = 7;
             this.lblCount.Text = "1";
             this.lblCount.Click += new System.EventHandler(this.guna2HtmlLabel1_Click);
-            // 
-            // guna2HtmlLabel2
-            // 
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(12, 201);
-            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(34, 23);
-            this.guna2HtmlLabel2.TabIndex = 8;
-            this.guna2HtmlLabel2.Text = "Add";
             // 
             // lblName
             // 
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(12, 171);
+            this.lblName.Location = new System.Drawing.Point(12, 143);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(57, 20);
             this.lblName.TabIndex = 9;
@@ -132,7 +122,7 @@
             // 
             this.lblPrice.AutoSize = true;
             this.lblPrice.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrice.Location = new System.Drawing.Point(48, 237);
+            this.lblPrice.Location = new System.Drawing.Point(49, 227);
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.Size = new System.Drawing.Size(91, 25);
             this.lblPrice.TabIndex = 10;
@@ -145,14 +135,14 @@
             this.btnCart.CustomImages.Parent = this.btnCart;
             this.btnCart.FillColor = System.Drawing.Color.Red;
             this.btnCart.FillColor2 = System.Drawing.Color.Maroon;
-            this.btnCart.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCart.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCart.ForeColor = System.Drawing.Color.White;
             this.btnCart.HoverState.Parent = this.btnCart;
-            this.btnCart.Location = new System.Drawing.Point(2, 275);
+            this.btnCart.Location = new System.Drawing.Point(16, 257);
             this.btnCart.Margin = new System.Windows.Forms.Padding(4);
             this.btnCart.Name = "btnCart";
             this.btnCart.ShadowDecoration.Parent = this.btnCart;
-            this.btnCart.Size = new System.Drawing.Size(184, 54);
+            this.btnCart.Size = new System.Drawing.Size(155, 50);
             this.btnCart.TabIndex = 11;
             this.btnCart.Text = "Add to Cart";
             this.btnCart.Click += new System.EventHandler(this.btnCart_Click);
@@ -164,14 +154,13 @@
             this.Controls.Add(this.btnCart);
             this.Controls.Add(this.lblPrice);
             this.Controls.Add(this.lblName);
-            this.Controls.Add(this.guna2HtmlLabel2);
             this.Controls.Add(this.lblCount);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnMinus);
             this.Controls.Add(this.itemImage);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "product_widget";
-            this.Size = new System.Drawing.Size(203, 364);
+            this.Size = new System.Drawing.Size(191, 314);
             this.Load += new System.EventHandler(this.product_widget_Load);
             this.LocationChanged += new System.EventHandler(this.product_widget_LocationChanged);
             ((System.ComponentModel.ISupportInitialize)(this.itemImage)).EndInit();
@@ -186,7 +175,6 @@
         private Guna.UI2.WinForms.Guna2GradientCircleButton btnAdd;
         private Guna.UI2.WinForms.Guna2GradientCircleButton btnMinus;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblCount;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label lblPrice;
         private Guna.UI2.WinForms.Guna2GradientButton btnCart;
