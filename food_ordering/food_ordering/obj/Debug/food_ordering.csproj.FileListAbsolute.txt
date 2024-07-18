@@ -12,3 +12,16 @@ C:\Users\wwasi\Desktop\C# Project\food_ordering\food_ordering\obj\Debug\food_ord
 C:\Users\wwasi\Desktop\C# Project\food_ordering\food_ordering\obj\Debug\food_ordering.pdb
 C:\Users\wwasi\Desktop\C# Project\food_ordering\food_ordering\obj\Debug\food_ordering.Menu.resources
 C:\Users\wwasi\Desktop\C# Project\food_ordering\food_ordering\obj\Debug\food_ordering.Beverages.resources
+D:\Asin Project\kiosk-food-ordering-system\food_ordering\food_ordering\bin\Debug\food_ordering.exe.config
+D:\Asin Project\kiosk-food-ordering-system\food_ordering\food_ordering\bin\Debug\food_ordering.exe
+D:\Asin Project\kiosk-food-ordering-system\food_ordering\food_ordering\bin\Debug\food_ordering.pdb
+D:\Asin Project\kiosk-food-ordering-system\food_ordering\food_ordering\obj\Debug\food_ordering.csproj.AssemblyReference.cache
+D:\Asin Project\kiosk-food-ordering-system\food_ordering\food_ordering\obj\Debug\food_ordering.Beverages.resources
+D:\Asin Project\kiosk-food-ordering-system\food_ordering\food_ordering\obj\Debug\food_ordering.Form1.resources
+D:\Asin Project\kiosk-food-ordering-system\food_ordering\food_ordering\obj\Debug\food_ordering.Menu.resources
+D:\Asin Project\kiosk-food-ordering-system\food_ordering\food_ordering\obj\Debug\food_ordering.Properties.Resources.resources
+D:\Asin Project\kiosk-food-ordering-system\food_ordering\food_ordering\obj\Debug\food_ordering.csproj.GenerateResource.cache
+D:\Asin Project\kiosk-food-ordering-system\food_ordering\food_ordering\obj\Debug\food_ordering.csproj.CoreCompileInputs.cache
+D:\Asin Project\kiosk-food-ordering-system\food_ordering\food_ordering\obj\Debug\food_ordering.csproj.CopyComplete
+D:\Asin Project\kiosk-food-ordering-system\food_ordering\food_ordering\obj\Debug\food_ordering.exe
+D:\Asin Project\kiosk-food-ordering-system\food_ordering\food_ordering\obj\Debug\food_ordering.pdb
