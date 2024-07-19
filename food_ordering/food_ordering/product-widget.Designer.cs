@@ -42,7 +42,7 @@
             // itemImage
             // 
             this.itemImage.Image = ((System.Drawing.Image)(resources.GetObject("itemImage.Image")));
-            this.itemImage.Location = new System.Drawing.Point(7, 2);
+            this.itemImage.Location = new System.Drawing.Point(13, 2);
             this.itemImage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.itemImage.Name = "itemImage";
             this.itemImage.ShadowDecoration.Parent = this.itemImage;
@@ -61,7 +61,7 @@
             this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.White;
             this.btnAdd.HoverState.Parent = this.btnAdd;
-            this.btnAdd.Location = new System.Drawing.Point(104, 198);
+            this.btnAdd.Location = new System.Drawing.Point(111, 183);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
@@ -84,7 +84,7 @@
             this.btnMinus.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMinus.ForeColor = System.Drawing.Color.White;
             this.btnMinus.HoverState.Parent = this.btnMinus;
-            this.btnMinus.Location = new System.Drawing.Point(47, 198);
+            this.btnMinus.Location = new System.Drawing.Point(54, 183);
             this.btnMinus.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMinus.Name = "btnMinus";
             this.btnMinus.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
@@ -99,7 +99,7 @@
             // 
             this.lblCount.BackColor = System.Drawing.Color.Transparent;
             this.lblCount.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCount.Location = new System.Drawing.Point(85, 200);
+            this.lblCount.Location = new System.Drawing.Point(92, 185);
             this.lblCount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblCount.Name = "lblCount";
             this.lblCount.Size = new System.Drawing.Size(12, 23);
@@ -111,7 +111,7 @@
             // 
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(12, 143);
+            this.lblName.Location = new System.Drawing.Point(19, 161);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(57, 20);
             this.lblName.TabIndex = 9;
@@ -122,7 +122,7 @@
             // 
             this.lblPrice.AutoSize = true;
             this.lblPrice.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrice.Location = new System.Drawing.Point(49, 227);
+            this.lblPrice.Location = new System.Drawing.Point(56, 212);
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.Size = new System.Drawing.Size(91, 25);
             this.lblPrice.TabIndex = 10;
@@ -138,7 +138,7 @@
             this.btnCart.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCart.ForeColor = System.Drawing.Color.White;
             this.btnCart.HoverState.Parent = this.btnCart;
-            this.btnCart.Location = new System.Drawing.Point(16, 257);
+            this.btnCart.Location = new System.Drawing.Point(23, 242);
             this.btnCart.Margin = new System.Windows.Forms.Padding(4);
             this.btnCart.Name = "btnCart";
             this.btnCart.ShadowDecoration.Parent = this.btnCart;
@@ -150,7 +150,7 @@
             // product_widget
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.LightGray;
             this.Controls.Add(this.btnCart);
             this.Controls.Add(this.lblPrice);
             this.Controls.Add(this.lblName);
@@ -160,7 +160,7 @@
             this.Controls.Add(this.itemImage);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "product_widget";
-            this.Size = new System.Drawing.Size(191, 314);
+            this.Size = new System.Drawing.Size(204, 314);
             this.Load += new System.EventHandler(this.product_widget_Load);
             this.LocationChanged += new System.EventHandler(this.product_widget_LocationChanged);
             ((System.ComponentModel.ISupportInitialize)(this.itemImage)).EndInit();

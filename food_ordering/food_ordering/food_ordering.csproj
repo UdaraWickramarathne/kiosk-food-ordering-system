@@ -99,6 +99,12 @@
       <DependentUpon>Beverages.cs</DependentUpon>
     </Compile>
     <Compile Include="DatabaseTest.cs" />
+    <Compile Include="digitalclock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="digitalclock.Designer.cs">
+      <DependentUpon>digitalclock.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,18 @@
     </Compile>
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="paymentgateway.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="paymentgateway.Designer.cs">
+      <DependentUpon>paymentgateway.cs</DependentUpon>
+    </Compile>
+    <Compile Include="paymentsuccess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="paymentsuccess.Designer.cs">
+      <DependentUpon>paymentsuccess.cs</DependentUpon>
     </Compile>
     <Compile Include="product-widget.cs">
       <SubType>UserControl</SubType>
@@ -125,11 +143,20 @@
     <EmbeddedResource Include="Beverages.resx">
       <DependentUpon>Beverages.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="digitalclock.resx">
+      <DependentUpon>digitalclock.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="paymentgateway.resx">
+      <DependentUpon>paymentgateway.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="paymentsuccess.resx">
+      <DependentUpon>paymentsuccess.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="product-widget.resx">
       <DependentUpon>product-widget.cs</DependentUpon>

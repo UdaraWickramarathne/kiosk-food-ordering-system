@@ -103,3 +103,6 @@ C:\Users\wwasi\Desktop\C# Project\kiosk-food-ordering-system\food_ordering\food_
 C:\Users\wwasi\Desktop\C# Project\kiosk-food-ordering-system\food_ordering\food_ordering\obj\Debug\food_ord.1D122481.Up2Date
 C:\Users\wwasi\Desktop\C# Project\kiosk-food-ordering-system\food_ordering\food_ordering\obj\Debug\food_ordering.exe
 C:\Users\wwasi\Desktop\C# Project\kiosk-food-ordering-system\food_ordering\food_ordering\obj\Debug\food_ordering.pdb
+C:\Users\wwasi\Desktop\C# Project\kiosk-food-ordering-system\food_ordering\food_ordering\obj\Debug\food_ordering.digitalclock.resources
+C:\Users\wwasi\Desktop\C# Project\kiosk-food-ordering-system\food_ordering\food_ordering\obj\Debug\food_ordering.paymentgateway.resources
+C:\Users\wwasi\Desktop\C# Project\kiosk-food-ordering-system\food_ordering\food_ordering\obj\Debug\food_ordering.paymentsuccess.resources
