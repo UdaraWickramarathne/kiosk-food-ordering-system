@@ -140,6 +140,12 @@
     <Compile Include="RoundedPanel.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="thankyou.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="thankyou.Designer.cs">
+      <DependentUpon>thankyou.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Beverages.resx">
       <DependentUpon>Beverages.cs</DependentUpon>
     </EmbeddedResource>
@@ -170,6 +176,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="thankyou.resx">
+      <DependentUpon>thankyou.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

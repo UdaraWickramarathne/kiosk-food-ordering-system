@@ -106,3 +106,7 @@ C:\Users\wwasi\Desktop\C# Project\kiosk-food-ordering-system\food_ordering\food_
 C:\Users\wwasi\Desktop\C# Project\kiosk-food-ordering-system\food_ordering\food_ordering\obj\Debug\food_ordering.digitalclock.resources
 C:\Users\wwasi\Desktop\C# Project\kiosk-food-ordering-system\food_ordering\food_ordering\obj\Debug\food_ordering.paymentgateway.resources
 C:\Users\wwasi\Desktop\C# Project\kiosk-food-ordering-system\food_ordering\food_ordering\obj\Debug\food_ordering.paymentsuccess.resources
+D:\Asin Project\kiosk-food-ordering-system\food_ordering\food_ordering\obj\Debug\food_ordering.digitalclock.resources
+D:\Asin Project\kiosk-food-ordering-system\food_ordering\food_ordering\obj\Debug\food_ordering.paymentgateway.resources
+D:\Asin Project\kiosk-food-ordering-system\food_ordering\food_ordering\obj\Debug\food_ordering.paymentsuccess.resources
+D:\Asin Project\kiosk-food-ordering-system\food_ordering\food_ordering\obj\Debug\food_ordering.thankyou.resources

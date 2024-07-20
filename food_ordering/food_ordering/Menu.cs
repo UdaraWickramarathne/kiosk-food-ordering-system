@@ -91,7 +91,7 @@ namespace food_ordering
                     }
 
                 }
-                dgvItemtable.Rows.Add(new object[] { itemwdg.Name, itemwdg.Count, itemwdg.Price, itemwdg.Price });
+                dgvItemtable.Rows.Add(new object[] { itemwdg.Name, itemwdg.Count, itemwdg.Price, itemwdg.Price, "Remove" });
                 GetTotal();
             };
         }
@@ -108,6 +108,41 @@ namespace food_ordering
             lblTotal.Text = total.ToString();
         }
 
-     
+        private void dgvItemtable_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.ColumnIndex == dgvItemtable.Columns["dgvAction"].Index && e.RowIndex >= 0)
+            {
+                dgvItemtable.Rows.RemoveAt(e.RowIndex);
+            }
+        }
+
+        private void btnPayment_Click(object sender, EventArgs e)
+        {
+            maincon();
+            foreach (DataGridViewRow row in dgvItemtable.Rows)
+            {
+                // Extract data from DataGridView row
+
+                string itemName = row.Cells["dgvName"].Value.ToString();
+                int quantity = Convert.ToInt32(row.Cells["dgvQuantity"].Value);
+                decimal price = Convert.ToDecimal(row.Cells["dgvPrice"].Value);
+                decimal amount = Convert.ToDecimal(row.Cells["dgvAmount"].Value);
+
+                // Define SQL command
+                string sql = "INSERT INTO temp_bill VALUES (@itemName, @quantity, @price, @amount)";
+
+                // Create and execute SQL command
+                using (MySqlCommand cmd = new MySqlCommand(sql, conn))
+                {
+                    cmd.Parameters.AddWithValue("@itemName", itemName);
+                    cmd.Parameters.AddWithValue("@quantity", quantity);
+                    cmd.Parameters.AddWithValue("@price", price);
+                    cmd.Parameters.AddWithValue("@amount", amount);
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            conn.Close();
+            new paymentgateway().ShowDialog();
+        }
     }
 }
