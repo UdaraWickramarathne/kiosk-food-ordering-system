@@ -142,6 +142,8 @@ namespace food_ordering
                 }
             }
             conn.Close();
+            dgvItemtable.Rows.Clear();
+            lblTotal.Text = "";
             new paymentgateway().ShowDialog();
         }
     }

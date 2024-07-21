@@ -42,7 +42,6 @@
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.thankyou1 = new food_ordering.thankyou();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
@@ -271,14 +270,6 @@
             this.guna2TextBox1.Size = new System.Drawing.Size(147, 26);
             this.guna2TextBox1.TabIndex = 3;
             // 
-            // thankyou1
-            // 
-            this.thankyou1.BackColor = System.Drawing.Color.White;
-            this.thankyou1.Location = new System.Drawing.Point(18, 11);
-            this.thankyou1.Name = "thankyou1";
-            this.thankyou1.Size = new System.Drawing.Size(520, 720);
-            this.thankyou1.TabIndex = 4;
-            // 
             // paymentgateway
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -286,7 +277,6 @@
             this.ClientSize = new System.Drawing.Size(557, 759);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.thankyou1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "paymentgateway";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -314,6 +304,5 @@
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton5;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton4;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton3;
-        private thankyou thankyou1;
     }
 }

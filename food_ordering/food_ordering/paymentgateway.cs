@@ -1,4 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
+using QRCoder;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -6,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -13,10 +15,10 @@ namespace food_ordering
 {
     public partial class paymentgateway : Form
     {
+        private Bitmap qrCodeImage;
         public paymentgateway()
         {
             InitializeComponent();
-            thankyou1.Visible = false;
         }
         MySqlConnection conn;
         public void maincon()
@@ -25,13 +27,12 @@ namespace food_ordering
             conn = new MySqlConnection(sql_conn);
             conn.Open();
         }
+        private int id;
         private void payBtn_Click(object sender, EventArgs e)
         {
-            thankyou1.Visible = true;
-            thankyou1.BringToFront();
             maincon();
             double total = 0;
-            int id = 0;
+            id = 0;
             try
             {
 
@@ -113,13 +114,39 @@ namespace food_ordering
                 string del_temp = "DELETE FROM temp_bill";
                 MySqlCommand cmd_del = new MySqlCommand(del_temp, conn);
                 cmd_del.ExecuteNonQuery();
+                conn.Close();
 
-                MessageBox.Show("This is your order Id:" + id,"Order Successful",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                //generateQR
+                try
+                {
+                    string url = $"http://my-qr-code-website.s3-website.eu-north-1.amazonaws.com?id={id}";
+
+                    QRCodeGenerator qrGenerator = new QRCodeGenerator();
+                    QRCodeData qrCodeData = qrGenerator.CreateQrCode(url, QRCodeGenerator.ECCLevel.Q);
+                    QRCode qrCode = new QRCode(qrCodeData);
+
+                    qrCodeImage = qrCode.GetGraphic(20);
+                }
+                catch(Exception ex)
+                {
+
+                }
+
+                this.Close();
+                Thread th = new Thread(openPayementQR);
+                th.SetApartmentState(ApartmentState.STA);
+                th.Start();
+                
             }
             catch(Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void openPayementQR(object sender)
+        {
+            new paymentsuccess(id,qrCodeImage).ShowDialog();
         }
     }
 }
