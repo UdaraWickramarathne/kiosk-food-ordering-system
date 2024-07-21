@@ -146,5 +146,32 @@ namespace food_ordering
             lblTotal.Text = "";
             new paymentgateway().ShowDialog();
         }
+
+        private void btnbeverages_Click(object sender, EventArgs e)
+        {
+            foreach(var item in itemPanel.Controls)
+            {
+                var product = (product_widget)item;
+                product.Visible = product.Category.Contains("Beverage");
+            }
+        }
+
+        private void btnSnack_Click(object sender, EventArgs e)
+        {
+            foreach (var item in itemPanel.Controls)
+            {
+                var product = (product_widget)item;
+                product.Visible = product.Category.Contains("Snack");
+            }
+        }
+
+        private void btnDesserts_Click(object sender, EventArgs e)
+        {
+            foreach (var item in itemPanel.Controls)
+            {
+                var product = (product_widget)item;
+                product.Visible = product.Category.Contains("Dessert");
+            }
+        }
     }
 }
